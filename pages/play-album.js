@@ -8,8 +8,6 @@ export default function ShowAlbums() {
                 <title>Play Album</title>
             </Head>
 
-
-
             <main>
                 <p>
                     <Link href="/"><a>Home</a></Link>

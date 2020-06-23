@@ -8,8 +8,6 @@ export default function ShowSonosGroups() {
         <title>Show Sonos Groups</title>
       </Head>
 
-
-
       <main>
         <p>
           <Link href="/show-artists"><a>show artists</a></Link>

@@ -6,3 +6,7 @@
 - Displays albums
 - Plays albums automatically and stops current playback => only pause, next and volume control is available
 - Max limit for volume
+
+## ToDo
+- add helper for head & title
+- Make frontend work => build first dummy design

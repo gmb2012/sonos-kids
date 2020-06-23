@@ -8,8 +8,6 @@ export default function ShowArtists() {
                 <title>Show Artists</title>
             </Head>
 
-
-
             <main>
                 <p>
                     <Link href="/show-albums"><a>show albums</a></Link>
