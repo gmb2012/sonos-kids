@@ -1,18 +1,12 @@
-import Head from 'next/head'
 import Link from 'next/link'
+import Layout from "../components/layout";
 
 export default function ShowSonosGroups() {
-  return (
-    <div>
-      <Head>
-        <title>Show Sonos Groups</title>
-      </Head>
-
-      <main>
-        <p>
-          <Link href="/show-artists"><a>show artists</a></Link>
-        </p>
-      </main>
-    </div>
-  )
+    return (
+        <Layout title="Show Sonos Groups">
+            <p>
+                <Link href="/show-artists"><a>Show Artists</a></Link>
+            </p>
+        </Layout>
+    )
 }

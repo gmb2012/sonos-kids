@@ -1,18 +1,12 @@
-import Head from 'next/head'
 import Link from 'next/link'
+import Layout from "../components/layout";
 
 export default function ShowAlbums() {
     return (
-        <div>
-            <Head>
-                <title>Show Albums</title>
-            </Head>
-
-            <main>
-                <p>
-                    <Link href="/play-album"><a>play album</a></Link>
-                </p>
-            </main>
-        </div>
+        <Layout title="Show Albums">
+            <p>
+                <Link href="/play-album"><a>Play Album</a></Link>
+            </p>
+        </Layout>
     )
 }
