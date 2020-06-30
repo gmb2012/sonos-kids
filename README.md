@@ -1,6 +1,6 @@
 # Kid friendly Sonos Controller
 
-- Allows to configute which groups of speakers to control
+- Allows to configure which groups of speakers to control
 - Searches all available services and removes duplicates (perhaps restrict if not possible)
 - Search for artist
 - Displays albums
@@ -8,5 +8,10 @@
 - Max limit for volume
 
 ## ToDo
-- add helper for head & title
-- Make frontend work => build first dummy design
+- Create config for speaker / groups
+- Add tiles incl. icons to display
+- Add handler for local storage => npm?!
+
+## Ideas
+- Change tabs for breadcrumb incl. image of artist and album
+- or: deactivate forward jumps on missing data in tab navigation

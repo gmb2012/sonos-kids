@@ -1,12 +1,11 @@
 import Link from 'next/link'
 import Layout from "../components/layout";
+import LinkBuilder from "../components/link-builder";
 
 export default function ShowAlbums() {
     return (
-        <Layout title="Show Albums">
-            <p>
-                <Link href="/play-album"><a>Play Album</a></Link>
-            </p>
+        <Layout pageId="showAlbums">
+            <LinkBuilder pageId="playAlbum" />
         </Layout>
     )
 }

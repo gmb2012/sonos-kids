@@ -1,0 +1,8 @@
+{
+  "pages": [
+    { "id": "showGroups", "url": "/", "title": "Show Sonos Groups", "icon": "fa-house" },
+    { "id": "showArtists", "url": "/show-artists", "title": "Show Artists", "icon": "fa-user-music" },
+    { "id": "showAlbums", "url": "/show-albums", "title": "Show Albums", "icon": "fa-album-collection" },
+    { "id": "playAlbum", "url": "/play-album", "title": "Play Album", "icon": "fa-play" }
+  ]
+}
