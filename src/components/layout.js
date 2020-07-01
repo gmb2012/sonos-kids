@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Config from "../helpers/config";
 import Menu from "./menu";
 import classNames from "classnames";
+import usePage from "../hooks/usePage";
 
 export default function Layout({ children, url }) {
-    let page = Config.getPage(url);
+    let page = usePage(url);
 
     if(typeof page !== 'undefined') {
         return (

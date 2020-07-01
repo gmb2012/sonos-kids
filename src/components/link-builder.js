@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import Config from "../helpers/config";
+import usePage from "../hooks/usePage";
 
 export default function LinkBuilder({ url }) {
-    let page = Config.getPage(url);
+    let page = usePage(url);
 
     return <Link href={page.url}><a>{page.title}</a></Link>
 }

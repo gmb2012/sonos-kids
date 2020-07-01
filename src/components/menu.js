@@ -1,11 +1,11 @@
-import Config from "../helpers/config";
 import { useRouter } from "next/router"
 import classNames from "classnames";
+import usePages from "../hooks/usePages";
 
 export default function Menu() {
     let tabs = [];
 
-    Config.getPages().forEach(function(page) {
+    usePages().forEach(function(page) {
         // check for active url
         let liClassNames = [];
         if (page.url == useRouter().pathname) {
