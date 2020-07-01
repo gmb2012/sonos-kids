@@ -5,9 +5,9 @@ class Config {
         return ConfigFile.pages;
     }
 
-    static getPage(pageId) {
+    static getPage(url) {
         return this.getPages().find(function(page) {
-            return page.id == pageId;
+            return page.url == url;
         });
     }
 }

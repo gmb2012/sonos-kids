@@ -5,8 +5,6 @@ import classNames from "classnames";
 export default function Menu() {
     let tabs = [];
 
-    console.log(useRouter().pathname)
-
     Config.getPages().forEach(function(page) {
         // check for active url
         let liClassNames = [];

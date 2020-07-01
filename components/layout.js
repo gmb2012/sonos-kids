@@ -3,8 +3,8 @@ import Config from "../helpers/config";
 import Menu from "./menu";
 import classNames from "classnames";
 
-export default function Layout({ children, pageId }) {
-    let page = Config.getPage(pageId);
+export default function Layout({ children, url }) {
+    let page = Config.getPage(url);
 
     return (
         <div>
