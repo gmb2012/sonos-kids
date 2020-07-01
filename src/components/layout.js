@@ -6,9 +6,7 @@ import classNames from "classnames";
 export default function Layout({ children, url }) {
     let page = Config.getPage(url);
 
-    if(typeof page === 'undefined') {
-        return;
-    } else {
+    if(typeof page !== 'undefined') {
         return (
             <div>
                 <Head>
