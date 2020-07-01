@@ -26,5 +26,7 @@ export default function Layout({ children, url }) {
                 </section>
             </div>
         )
+    } else {
+        return;
     }
 }
