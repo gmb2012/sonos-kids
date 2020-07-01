@@ -13,7 +13,7 @@ export default function Menu() {
         }
 
         tabs.push(
-            <li key={page.id} className={liClassNames}>
+            <li key={page.url} className={liClassNames}>
                 <a href={page.url}>
                     <span className="icon"><i className={ classNames("fad", page.icon) }  aria-hidden="true"></i></span>
                     <span>{page.title}</span>

@@ -1,4 +1,4 @@
-import ConfigFile from "../config/config.json"
+import ConfigFile from "../../config/config.json"
 
 class Config {
     static getPages() {
