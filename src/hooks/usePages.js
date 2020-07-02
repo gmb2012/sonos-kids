@@ -1,5 +1,15 @@
-import ConfigFile from "../../config/config.json";
+import { useRouter } from "next/router";
+import Config from "../../config/config.json";
 
-export default function usePage() {
-    return ConfigFile.pages;
+export default function usePages(pageUrl) {
+    const router = useRouter();
+    const pageToFetch = pageUrl || router.pathname;
+
+    function getCurrentRoute(pathname) {
+        return Config.pages.find(p => p.url === pathname);
+    }
+    return {
+        currentPage: getCurrentRoute(pageToFetch),
+        pages: Config.pages
+    };
 }

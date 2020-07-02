@@ -5,7 +5,7 @@ import usePages from "../hooks/usePages";
 export default function Menu() {
     let tabs = [];
 
-    usePages().forEach(function(page) {
+    usePages().pages.forEach(function(page) {
         // check for active url
         let liClassNames = [];
         if (page.url == useRouter().pathname) {

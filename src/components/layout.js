@@ -1,16 +1,16 @@
 import Head from "next/head";
 import Menu from "./menu";
 import classNames from "classnames";
-import usePage from "../hooks/usePage";
+import usePages from "../hooks/usePages";
 
 export default function Layout({ children, url }) {
-    let page = usePage(url);
+    let currentPage = usePages().currentPage;
 
-    if(typeof page !== 'undefined') {
+    if(typeof currentPage !== 'undefined') {
         return (
             <div>
                 <Head>
-                    <title>Sonos Kids Controller - {page.title}</title>
+                    <title>Sonos Kids Controller - {currentPage.title}</title>
                 </Head>
 
                 <section className="section">
@@ -18,8 +18,8 @@ export default function Layout({ children, url }) {
                         <Menu />
 
                         <h1 className="title is-size-1 is-capitalized">
-                            <span className="icon mr-3"><i className={ classNames("fad", page.icon) }  aria-hidden="true"></i></span>
-                            <span>{page.title}</span>
+                            <span className="icon mr-3"><i className={ classNames("fad", currentPage.icon) }  aria-hidden="true"></i></span>
+                            <span>{currentPage.title}</span>
                         </h1>
                         {children}
                     </div>
@@ -27,6 +27,6 @@ export default function Layout({ children, url }) {
             </div>
         )
     } else {
-        return;
+        return null;
     }
 }
