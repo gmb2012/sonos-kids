@@ -8,10 +8,10 @@
 - Max limit for volume
 
 ## ToDo
+- add parameters to urls
+- validate if parameters are there
+- deactivate forward jumps on missing data in tab navigation
 - Create config for speaker / groups
-- Add tiles incl. icons to display
-- Add handler for local storage => npm?!
-
-## Ideas
-- Change tabs for breadcrumb incl. image of artist and album
-- or: deactivate forward jumps on missing data in tab navigation
+- use speaker groups hook
+- Add tiles incl. icons to display (icon big centered, font below)
+- Add handler for local storage => npm?! => hook!!!
