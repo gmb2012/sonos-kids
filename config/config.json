@@ -4,5 +4,9 @@
     { "url": "/[speakergroupId]", "title": "Show Artists", "icon": "fa-user-music" },
     { "url": "/[speakergroupId]/[artistName]", "title": "Show Albums", "icon": "fa-album-collection" },
     { "url": "/[speakergroupId]/[artistName]/[albumUri]", "title": "Play Album", "icon": "fa-play" }
+  ],
+  "speakers": [
+    { "id": "1" },
+    { "id": "2" }
   ]
 }
