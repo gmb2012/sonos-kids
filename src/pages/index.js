@@ -7,9 +7,11 @@ export default function ShowSonosGroups() {
                 <div className="tile is-child notification is-primary has-text-centered">
                     <div className="title">One</div>
                     More text
-                    <Link href="/show-artists/[speakergroupId]" as="/show-artists/1">
-                        <a>Next Page</a>
-                    </Link>
+                    <div>
+                        <Link href="/[speakergroupId]" as="/1">
+                            <a>To /[speakergroupId].js</a>
+                        </Link>
+                    </div>
                 </div>
             </div>
             <div className="tile is-parent is-6">

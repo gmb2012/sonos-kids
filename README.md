@@ -8,9 +8,11 @@
 - Max limit for volume
 
 ## ToDo
+- dynamic / static props: first two static, then dynamic
 - add parameters to urls
 - validate if parameters are there
 - deactivate forward jumps on missing data in tab navigation
+- change to viktor's folder structure
 - Create config for speaker / groups
 - use speaker groups hook
 - Add tiles incl. icons to display (icon big centered, font below)

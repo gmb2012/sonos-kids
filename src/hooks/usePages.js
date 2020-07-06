@@ -5,8 +5,6 @@ export default function usePages(pageUrl) {
     const router = useRouter();
     const pageToFetch = pageUrl || router.pathname;
 
-    console.log(router);
-
     function getCurrentRoute(pathname) {
         return Config.pages.find(p => p.url === pathname);
     }
