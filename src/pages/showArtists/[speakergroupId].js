@@ -1,14 +1,15 @@
 import Link from "next/link";
-import useSpeakers from "../hooks/useSpeakers";
+import useSpeakers from "../../hooks/useSpeakers";
 
 export default function ShowArtists({ speakergroupId }) {
+    console.log("huhu");
     const artistName = "Benjamin Blümchen";
 
     return (
         <div>
             <div>
-                <Link href="/[speakergroupId]/[artistName]" as={`/${speakergroupId}/${artistName}`}>
-                    <a>To /[speakergroupId]/[artistName].js</a>
+                <Link href="/showAlbums/[speakergroupId]/[artistName]" as={`/showAlbums/${speakergroupId}/${artistName}`}>
+                    <a>To /showAlbums/[speakergroupId]/[artistName].js</a>
                 </Link>
             </div>
         </div>

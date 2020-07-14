@@ -8,8 +8,8 @@ export default function ShowSonosGroups() {
                     <div className="title">One</div>
                     More text
                     <div>
-                        <Link href="/[speakergroupId]" as="/1">
-                            <a>To /[speakergroupId].js</a>
+                        <Link href="/showArtists/[speakergroupId]" as="/showArtists/1">
+                            <a>To /showArtists/[speakergroupId].js</a>
                         </Link>
                     </div>
                 </div>
