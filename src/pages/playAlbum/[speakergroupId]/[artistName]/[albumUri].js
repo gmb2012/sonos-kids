@@ -1,3 +1,3 @@
 export default function PlayAlbum() {
-    return null
+  return null;
 }
