@@ -9,12 +9,3 @@ export default function ShowAlbums() {
         </div>
     )
 }
-
-export async function getServerSideProps(context) {
-    return {
-        props: {
-            speakergroupId: context.params.speakergroupId,
-            artistName: context.params.artistName
-        }
-    }
-}
