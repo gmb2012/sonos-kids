@@ -8,9 +8,12 @@
 - Max limit for volume
 
 ## ToDo
-- add ESLint
+- Issues from Viktor
+- add browserlist: https://www.npmjs.com/package/browserslist
+- Convert to ES6
 - validate if parameters are there: check speaker groups always
 - deactivate forward jumps on missing data in tab navigation
-- change to viktor's folder structure
+- change to viktor's folder structure => FE & BE
+- Add fake services
 - Add tiles incl. icons to display (icon big centered, font below)
-- Add handler for local storage => npm?! => hook!!!
+- React in play album on events
